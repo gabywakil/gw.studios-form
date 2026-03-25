@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Marca — GW Studios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="hero">
+    <span class="logo">GW · Studios</span>
+    <h1>Tu marca empieza<br>con <em>conocerte.</em></h1>
+    <div class="hero-line"></div>
+    <p class="hero-quote">"Detrás de cada proyecto, hay una persona con algo valioso que decir."</p>
+  </div>
+
+  <div class="container">
+
+    <div class="intro-note">
+      <p>Este formulario es el primer paso para construir algo que realmente te represente. No hay respuestas correctas ni incorrectas — solo cuéntame quién eres y hacia dónde quieres ir. El resto lo hacemos juntas.</p>
+    </div>
+
+    <form id="gwForm">
+
+      <!-- 01 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-num">01</span>
+          <span class="section-title">Sobre ti</span>
+        </div>
+
+        <div class="question-block">
+          <label for="nombre">Tu nombre y profesión</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana Martínez — Psicóloga Clínica">
+        </div>
+
+        <div class="question-block">
+          <label for="descripcion">¿A qué te dedicas y qué problema resuelves?</label>
+          <textarea id="descripcion" name="descripcion" placeholder="Cuéntame qué haces y cómo ayudas a las personas..."></textarea>
+        </div>
+
+        <div class="question-block">
+          <label for="diferenciador">¿Qué te hace diferente?</label>
+          <textarea id="diferenciador" name="diferenciador" placeholder="Tu forma de trabajar, tu historia, tu enfoque..."></textarea>
+        </div>
+
+        <div class="question-block">
+          <label for="palabras">Tres palabras que te definen</label>
+          <input type="text" id="palabras" name="palabras" placeholder="Ej: cercana, honesta, transformadora">
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-num">02</span>
+          <span class="section-title">Tu cliente ideal</span>
+        </div>
+
+        <div class="question-block">
+          <label for="cliente">¿A quién quieres llegar?</label>
+          <textarea id="cliente" name="cliente" placeholder="Edad, situación de vida, qué está sintiendo, qué está buscando..."></textarea>
+        </div>
+
+        <div class="question-block">
+          <label>¿Qué quieres que sienta alguien al ver tu marca por primera vez?</label>
+          <input type="hidden" name="sensacion" id="sensacion-input">
+          <div class="chips-group" data-target="sensacion-input">
+            <div class="chip" data-value="Confianza">Confianza</div>
+            <div class="chip" data-value="Calma">Calma</div>
+            <div class="chip" data-value="Inspiración">Inspiración</div>
+            <div class="chip" data-value="Cercanía">Cercanía</div>
+            <div class="chip" data-value="Profesionalismo">Profesionalismo</div>
+            <div class="chip" data-value="Seguridad">Seguridad</div>
+            <div class="chip" data-value="Emoción">Emoción</div>
+            <div class="chip" data-value="Lujo">Lujo</div>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <label for="frase">¿Tienes una frase o mensaje que te represente?</label>
+          <input type="text" id="frase" name="frase" placeholder="Si no tienes una todavía, está bien — la construimos juntas.">
+          <p class="hint">Puede ser algo que ya usas, o algo que simplemente sientes que eres.</p>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-num">03</span>
+          <span class="section-title">Identidad visual</span>
+        </div>
+
+        <div class="question-block">
+          <label>¿Qué estilo visual va contigo?</label>
+          <input type="hidden" name="estilo" id="estilo-input">
+          <div class="chips-group" data-target="estilo-input">
+            <div class="chip" data-value="Minimalista y limpio">Minimalista y limpio</div>
+            <div class="chip" data-value="Cálido y orgánico">Cálido y orgánico</div>
+            <div class="chip" data-value="Elegante y sofisticado">Elegante y sofisticado</div>
+            <div class="chip" data-value="Moderno y atrevido">Moderno y atrevido</div>
+            <div class="chip" data-value="Suave y femenino">Suave y femenino</div>
+            <div class="chip" data-value="No sé, me oriento contigo">No sé, me oriento contigo</div>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <label for="colores">Colores que te gustan — y colores que no</label>
+          <input type="text" id="colores" name="colores" placeholder="Ej: me gustan los tonos tierra, no me van los colores muy brillantes">
+        </div>
+
+        <div class="question-block">
+          <label for="referencias">Marcas o cuentas que admiras visualmente</label>
+          <textarea id="referencias" name="referencias" placeholder="Nombres de cuentas, sitios web, marcas — y por qué te gustan..."></textarea>
+          <p class="hint">No tienen que ser de tu industria. Solo comparte lo que te inspira.</p>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-num">04</span>
+          <span class="section-title">Presencia digital</span>
+        </div>
+
+        <div class="question-block">
+          <label>¿Qué servicio necesitas?</label>
+          <input type="hidden" name="servicio" id="servicio-input">
+          <div class="chips-group" data-target="servicio-input">
+            <div class="chip" data-value="Identidad visual / Branding">Identidad visual / Branding</div>
+            <div class="chip" data-value="Diseño web">Diseño web</div>
+            <div class="chip" data-value="Social media">Social media</div>
+            <div class="chip" data-value="Contenido y copywriting">Contenido y copywriting</div>
+            <div class="chip" data-value="Todo lo anterior">Todo lo anterior</div>
+            <div class="chip" data-value="No sé por dónde empezar">No sé por dónde empezar</div>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <label>¿Tienes redes o sitio web activos?</label>
+          <input type="hidden" name="redes" id="redes-input">
+          <div class="chips-group" data-target="redes-input">
+            <div class="chip" data-value="Instagram personal">Instagram personal</div>
+            <div class="chip" data-value="Instagram profesional">Instagram profesional</div>
+            <div class="chip" data-value="Sitio web">Sitio web</div>
+            <div class="chip" data-value="LinkedIn">LinkedIn</div>
+            <div class="chip" data-value="Ninguno todavía">Ninguno todavía</div>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <label>¿Cuál es tu presupuesto aproximado?</label>
+          <input type="hidden" name="presupuesto" id="presupuesto-input">
+          <div class="chips-group" data-target="presupuesto-input">
+            <div class="chip" data-value="Estoy explorando">Estoy explorando</div>
+            <div class="chip" data-value="Menos de $300">Menos de $300</div>
+            <div class="chip" data-value="$300 – $600">$300 – $600</div>
+            <div class="chip" data-value="$600 – $1000">$600 – $1000</div>
+            <div class="chip" data-value="Más de $1000">Más de $1000</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 05 -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-num">05</span>
+          <span class="section-title">Para cerrar</span>
+        </div>
+
+        <div class="question-block">
+          <label for="extra">¿Hay algo más que quieras contarme?</label>
+          <textarea id="extra" name="extra" placeholder="Miedos, sueños, expectativas — lo que sientas importante que yo sepa antes de empezar..."></textarea>
+        </div>
+
+        <div class="question-block">
+          <label>¿Cómo llegaste a GW Studios?</label>
+          <input type="hidden" name="como_llego" id="como_llego-input">
+          <div class="chips-group" data-target="como_llego-input">
+            <div class="chip" data-value="Instagram">Instagram</div>
+            <div class="chip" data-value="Recomendación">Recomendación</div>
+            <div class="chip" data-value="Google">Google</div>
+            <div class="chip" data-value="Ya te conocía">Ya te conocía</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="submit-area" id="submitArea">
+        <div class="error-msg" id="errorMsg">Por favor completa los campos obligatorios antes de enviar.</div>
+        <button type="submit" class="submit-btn">Enviar formulario</button>
+        <p class="footer-note">GW · Studios — Gabriella Wakil</p>
+      </div>
+
+    </form>
+
+    <div class="thank-you" id="thankYou">
+      <span class="gw-mark">GW</span>
+      <h2>Gracias por compartir.</h2>
+      <p>Ya tengo todo lo que necesito para empezar a construir algo que realmente te represente.<br>Me pongo en contacto contigo muy pronto.</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
